@@ -13,7 +13,7 @@ on:
 
 jobs:
   labirynt-smierci:
-    uses: mystikolaos/actions/.github/workflows/check-shell-command.yml@main
+    uses: mystikolaos/actions/.github/workflows/check_shell_command.yaml@main
     with:
       command: cd ./src && pdflatex labirynt_smierci.tex
       packages: texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-lang-polish
