@@ -1,0 +1,20 @@
+# Tests the compilation of LaTeX files to PDFs.
+#
+# Latest revision: 2025-04-24
+#
+# Created and unlicensed by Mikołaj Bartnicki <mikolaj@bartnicki.org>;
+# please read UNLICENSE file for details.
+
+name: Test LaTeX to PDF compilation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  labirynt-smierci:
+    uses: mystikolaos/actions/.github/workflows/check-shell-command.yml@main
+    with:
+      command: cd ./src && pdflatex labirynt_smierci.tex
+      packages: texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-lang-polish
+      expected-file: ./src/labirynt_smierci.pdf
