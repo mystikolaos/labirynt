@@ -6,7 +6,7 @@ Fan-made digital reconstruction of _Labirynt Śmierci_ board game released in th
 
 # Author
 
-I am not the author of the game, neither the original nor the Polish edition, so I do not claim any copyright over it. Any other content that can be subject to licensing was created and [unlicensed][98] by [Mikołaj Bartnicki][99].
+I am not the author of the game, neither the original nor the Polish edition, so I do not claim any copyright over it. Any other content that may be subject to licensing was created and [unlicensed][98] by [Mikołaj Bartnicki][99].
 
 [98]:UNLICENSE
 [99]:mailto:mikolaj@bartnicki.org
