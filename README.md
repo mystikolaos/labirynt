@@ -6,7 +6,7 @@ Fan-made digital reconstruction of _Labirynt Śmierci_ board game released in th
 _Labirynt śmierci_ was an unauthorized Polish edition of _Citadel of Blood_, published during a period when Poland lacked modern copyright law.
 Includes a LaTeX typeset rulebook and recreated game components (board tiles and tokens) - all in printer-friendly formats.
 
-# Author
+## Author
 
 I am not the author of the game, neither the original nor the Polish edition, so I do not claim any copyright over it.
 Any other content that may be subject to licensing was created and [unlicensed][98] by [Mikołaj Bartnicki][99].
