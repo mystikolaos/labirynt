@@ -1,11 +1,11 @@
 # Tests the compilation of LaTeX files to PDFs.
 #
-# Latest revision: 2026-04-24
+# Latest revision: 2026-04-27
 #
 # Created and unlicensed by Mikołaj Bartnicki <mikolaj@bartnicki.org>;
 # please read UNLICENSE file for details.
 
-name: Test LaTeX to PDF compilation
+name: Check LaTeX
 
 on:
   push:
@@ -15,6 +15,7 @@ jobs:
   labirynt-smierci:
     uses: mystikolaos/actions/.github/workflows/check_shell_command.yaml@main
     with:
-      command: cd ./src && pdflatex labirynt_smierci.tex
+      # Calling pdflatex twice to resolve cross-references (TOC, \ref, \pageref, etc.).
+      command: cd ./rulebook && pdflatex labirynt_smierci.tex && pdflatex labirynt_smierci.tex
       packages: texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-lang-polish
-      expected-file: ./src/labirynt_smierci.pdf
+      expected-file: ./rulebook/labirynt_smierci.pdf
