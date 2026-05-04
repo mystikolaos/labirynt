@@ -6,4 +6,32 @@ Jej celem jest odnalezienie przez oddział i zniszczenie magicznych Czarnych Wr�
 Decyzje dotyczące zachowania się postaci podczas gry mogą być podejmowane wspólnie przez wszystkich graczy lub też, jeżeli tak zostanie zdecydowane, każdy z graczy może podejmować decyzje indywidualnie.
 
 \textit{Labirynt śmierci} rozgrywany jest w etapach.
-Każdy etap jest to blok czynności, które gracze powinni wykonać przed przystąpieniem do następnego etapu. Czynności te muszą być wykonywane w przypisanem im niżej kolejności:
+Każdy etap jest to blok czynności, które gracze powinni wykonać przed przystąpieniem do następnego etapu.
+Czynności te muszą być wykonywane w przypisanem im niżej kolejności:
+
+\subsection{Umieszczenie nowego segmentu}
+\begin{enumerate}
+    \item
+        Oddział ustala drogę, którą opuści zajmowany obecnie segment, czyli kierunek, w którym pójdzie.
+    \item
+        Jeden z graczy losowy wybiera z pojemnika nowy segment labiryntu (żeton).
+    \item
+        Nowy segment układany jest obok tego, który oddział opuszcza, na przedłużeniu drogi, którą zdecydował się on wybrać.
+        Nowy segment musi zostać ułożony tak, by pasował do segmentu opuszczanego, to znaczy: korytarz musi stanowić przedłużenie korytarza, a przejście musi łączyć się z przejściem.
+        Od decyzji graczy zależy w jaki sposób zostanie ułożony taki segment, w przypadku którego możliwe jest więcej niż jedno prawidłowe ułożenie.
+\end{enumerate}
+
+\subsection{Poszukiwanie pułapek}
+\begin{enumerate}
+    \item
+        Jeden z graczy rzuca 1K6, by sprawdzic czy drzwi, przez które oddział ma zamiar przejść zawierają pułapkę.
+        Poszukiwanie pułapek (rzucanie kostką) odbywa się tylkoe wtedy, gdy oddział chce wejść do nieodwiedzanej dotychczas komnaty, bądź też opuszcza komnątę inną drogą, niż do niej wszedł.
+        A więc oddział nie szuka pułapek wtedy, gdy porusza się korytarzem.
+        Drzwi zawierają pułapkę, jeśli wyrzucone zostanie 1 oczko.
+    \item
+        Po odnalezieniu połapki (wyrzucone 1 oczko) należy wydelegować jedną postać do jej zbadania.
+        Delegowana postać powinna posiadać w grupie zdolności hasło \textit{pułapki}, gdyż tylko wtedy może podjąć próbe unieszkodliwienia znalezionej pułapki (patrz 7.0 NUMER).
+    \item
+        Jeżeli próba unieszkodliwienia pułapki zakończy się niepowodzeniem lub w ogóle nie zostanie podjęca, uważa się, że pułapka zadziałała.
+        Gracze muszą ustalić jej rodzaj rzucając 1K6 i odczytując rezultat z tabeli 7.1 Pułapki NUMER!
+\end{enumerate}
